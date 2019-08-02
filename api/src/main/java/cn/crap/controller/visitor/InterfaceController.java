@@ -177,7 +177,7 @@ public class InterfaceController extends BaseController {
 
         return new JsonResult().data(interfaces).page(page).others(
                 Tools.getMap("crumbs", Tools.getCrumbs(projectCache.get(module.getProjectId()).getName(),
-                        "# /module/list?projectId=" + module.getProjectId(), module.getName(), "void")));
+                        "#/module/list?projectId=" + module.getProjectId(), module.getName(), "void")));
     }
 
     @RequestMapping("/detail.do")
